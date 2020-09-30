@@ -305,24 +305,28 @@ const dev = (a, b) => a / b;
 //     }
 // }
 
+const sum = (a, b) => a + b;
+const min = (a, b) => a - b;
+const mult = (a, b) => a * b;
+const dev = (a, b) => a / b;
 
-// const calculate = (a, b, operator) => {
-//     if (operator === "+") {
-//         return sum(a, b);
-//     }
-//     if (operator === "-") {
-//         return min(a, b);
-//     }
-//     if (operator === "*") {
-//         return mult(a, b);
-//     }
-//     if (operator === "/") {
-//         return dev(a, b);
-//     }
-// }
+const calculate = (a, b, operator) => {
+    if (operator === "+") {
+        return sum(a, b);
+    }
+    if (operator === "-") {
+        return min(a, b);
+    }
+    if (operator === "*") {
+        return mult(a, b);
+    }
+    if (operator === "/") {
+        return dev(a, b);
+    }
+}
 
-// console.log(calculate(10, 5, "+"))
-// console.log(calculate(10, 5, "/"))
+console.log(calculate(10, 5, "+"))
+console.log(calculate(10, 5, "/"))
 
 // console.log("sum:", sum(10, 5))
 // console.log("min:", min(10, 5))
